@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteHomeMaster.master.cs" Inherits="MySiteNew.SiteHomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>MySite</title>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="Assests/CSS/MySite.main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <section>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <ul class="sci">
+                    <li><a href="#">
+                        <img src="../Images/Home/facebook.png" alt=""></a></li>
+                    <li><a href="#">
+                        <img src="../Images/Home/twitter.png" alt=""></a></li>
+                    <li><a href="#">
+                        <img src="../Images/Home/instagram.png" alt=""></a></li>
+                </ul>
+                <p class="copyrightText">
+                    Copyright @ 2022 NiluAhirePatil. All  right reserved.
+                </p>
+            </div>
+        </section>
+        <div>
+        </div>
+    </form>
+</body>
+</html>

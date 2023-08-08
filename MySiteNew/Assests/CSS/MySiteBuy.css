@@ -1,0 +1,240 @@
+.container .BuyArea
+{
+    position: relative;
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 15px;
+    /* margin-top: 25px; */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    padding:15px;
+  
+    min-width: 100%;
+    min-height: auto;
+    
+   
+}
+.container
+{
+    justify-content: center;
+}
+.inputbox{
+    position: relative;
+    width: 99%;
+    margin-top: 35px;
+}
+
+.inputboxselected {
+    position: relative;
+    width: 99%;
+    margin-top: 35px;
+}
+.inputbox input{
+    position: relative;
+    width: 99%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #28292d;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.inputboxselected input {
+    position: relative;
+    width: 99%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #28292d;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 20px 10px;
+    font-size: 1em;
+    color: #d8586e;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputboxselected span {
+    position: absolute;
+    left: 0;
+    padding: 20px 20px 10px;
+    font-size: 0.75em;
+    color: #8a2435;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    color: #8a2435;
+    transform: translateX(-20px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span{
+    color: #8a2435;
+    transform: translateX(-20px) translateY(-34px);
+    font-size: 0.75em;
+}
+.inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    height: 2px;
+    background: #f083bd;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputboxselected i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    height: 44px;
+    background: #f083bd;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i{
+    height: 44px;
+}
+.container .BuyArea .UserInfo
+{
+    min-width: 50%;
+}
+.container .BuyArea .BuyInfo
+{
+    min-width: 50%;
+}
+.BuyArea .btnSave
+{
+    min-width: 50%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btnSave .BtnOrder
+{
+    color: #8a2435;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid #f083bd;
+    padding: 11px 25px;
+    width :150px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+} 
+.btnSave .BtnOrder:hover
+{
+    color: #fff;
+    background: #f083bd;
+    letter-spacing: 0.1em;
+}
+.BuyArea .ProductPreview
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-width: 80%;
+}
+
+.Product .ProImage {
+    max-width: 300px;
+    max-height: 500px;
+    padding: 10px;
+}
+.Product .ProName
+{
+    font-size: 2em;
+    color: #8a2435 ;
+}
+/* .Product .ProName:hover
+{
+    letter-spacing: 0.1em;
+} */
+.Product .ProPrice
+{
+    font-size: 1.2em;
+    color: #8a2435 ;
+    padding: 10px;
+}
+
+
+
+.ProductPreview .Offerarea .Offer {
+    display: flex;
+    margin: 15px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    padding: 20px;
+    min-width: 100%;
+    min-height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.Offerarea .Offer .Offervolume {
+    font-size: 2em;
+    color: #8a2435;
+    padding: 10px;
+}
+.Offerarea .Offer .Offerprice {
+    font-size: 1em;
+    color: #5147af;
+    padding: 10px;
+}
+.Offerarea .Offer .Offerselect {
+    color: #8a2435;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid #f083bd;
+    
+    padding: 5px;
+    width: 75px;
+    /* margin-top: 10px; */
+    /* border-radius: 4px; */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Offerarea .Offer .Offerselect:hover {
+        color: #fff;
+        background: #f083bd;
+        letter-spacing: 0.1em;
+    }

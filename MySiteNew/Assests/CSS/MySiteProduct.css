@@ -1,0 +1,105 @@
+.container
+{
+    justify-content: center;
+}
+.row
+{
+    position: relative;
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.row .WorkArea
+{
+    margin: 10px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255,0.5);
+    padding:15px;
+  
+    min-width: 300px;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.row .WorkArea:hover
+{
+    border: 1px solid #e700fc;
+    border-top: 1px solid rgba(231, 0, 252, 0.25);
+    border-left: 1px solid rgba(231, 0, 252,0.25);
+}
+.row .WorkArea .Product
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.WorkArea .Product .ProImage
+{
+   max-width:300px;
+   max-height:500px;
+   padding: 5px;
+}
+
+
+.WorkArea .Product .ProName
+{
+    font-size: 2em;
+    color: #8a2435 ;
+    padding: 5px;
+}
+.WorkArea .Product .ProPrice
+{
+    font-size: 1.2em;
+    color: #8a2435 ;
+    padding: 5px;
+}
+
+
+.WorkArea .Product .ProBuy {
+    color: #8a2435;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid #f083bd;
+    
+    padding: 5px;
+    width: 75px;
+    
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.WorkArea .Product .ProBuy:hover {
+        color: #fff;
+        background: #f083bd;
+        letter-spacing: 0.1em;
+    } 
+
+
+
+/* .WorkArea .Product .ProBuy
+{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff00c8;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+.WorkArea .Product .ProBuy:hover
+{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+} */
